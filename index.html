@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" type="image/png" href="img/favico.png" />
+
+    <title>Mamunx &mdash; your booking app</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="Trillo Logo" class="logo" />
+
+        <form class="search" action="#">
+          <input class="search__input" type="text" placeholder="Search Hotel" />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="nav">
+          <div class="nav__box">
+            <svg class="nav__icon">
+              <use xlink:href="img/sprite.svg#icon-paper-plane"></use>
+            </svg>
+            <span class="nav__notification">7</span>
+          </div>
+          <div class="nav__box">
+            <svg class="nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="nav__notification">13</span>
+          </div>
+          <div class="nav__user">
+            <img class="nav__photo" src="img/user.jpg" alt="User Photo" />
+            <span class="nav__name">Mamun</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="navbar">
+            <li class="navbar__list navbar__list--active">
+              <a href="#" class="navbar__link">
+                <svg class="navbar__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span class="navbar__txt">Hotel</span>
+              </a>
+            </li>
+            <li class="navbar__list">
+              <a href="#" class="navbar__link">
+                <svg class="navbar__icon">
+                  <use xlink:href="img/sprite.svg#icon-paper-plane"></use>
+                </svg>
+                <span class="navbar__txt">Flight</span>
+              </a>
+            </li>
+            <li class="navbar__list">
+              <a href="#" class="navbar__link">
+                <svg class="navbar__icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span class="navbar__txt">Car Rental</span>
+              </a>
+            </li>
+            <li class="navbar__list">
+              <a href="#" class="navbar__link">
+                <svg class="navbar__icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span class="navbar__txt">Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            &copy; 2021 by Mamunx Motel. All rights reserved.
+          </div>
+        </nav>
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="Hotel View 1"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="Hotel View 2"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="Hotel View 3"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h2 class="overview__heading">Hotel Las Palmas</h2>
+            <div class="overview__stars">
+              <svg class="overview__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon overview__icon--location">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="overview__btn">Dhaka, Bangladesh</button>
+            </div>
+
+            <div class="overview__ratings">
+              <div class="overview__avg">8.6</div>
+              <div class="overview__count">429 Votes</div>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto
+                voluptate.
+              </p>
+              <p class="paragraph">
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Free wifi in all rooms</li>
+                <li class="list__item">Air coditioning & heating</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">We speak in all the languages</li>
+                <li class="list__item">Perfect for families</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Mamun and his friends recommended this hotel.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Friend 1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Friend 2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-6.jpg"
+                    alt="Friend 4"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__txt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="User 1"
+                    class="review__photo"
+                  />
+                  <div class="review__box">
+                    <p class="review__name">MH Mamun</p>
+                    <p class="review__date">Oct 11th, 2020</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-2.jpg"
+                    alt="User 2"
+                    class="review__photo"
+                  />
+                  <div class="review__box">
+                    <p class="review__name">Mr. Hasan</p>
+                    <p class="review__date">Aug 23rd, 2021</p>
+                  </div>
+                  <div class="review__rating">9.3</div>
+                </figcaption>
+              </figure>
+              <button class="overview__btn">Show all<span>&rarr;</span></button>
+            </div>
+          </div>
+          <div class="cta">
+            <h2 class="cta__booking">
+              Good news! we have 4 rooms for your selected dates.
+            </h2>
+            <button class="cta__btn">
+              <span class="cta__btn-show">Book Now</span>
+              <span class="cta__btn-hide">Only 4 Rooms Left</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+.navbar {
+  font-size: 1.4rem;
+  margin-top: 3.5rem;
+  list-style: none;
+
+  &__list {
+    display: block;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0.3rem;
+      background-color: var(--color-primary);
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+        background-color 0.1s;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+    &:hover::before,
+    &--active::before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+    &:active::before {
+      background-color: var(--color-primary-light);
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      color: var(--color-grey-light-1);
+      text: {
+        decoration: none;
+        transform: uppercase;
+      }
+      padding: 1.5rem 3rem;
+      display: flex;
+      z-index: 9;
+      position: relative;
+    }
+  }
+  &__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: currentColor;
+  }
+  &__txt {
+    color: var(--color-grey-light-1);
+    margin-left: 2rem;
+  }
+}

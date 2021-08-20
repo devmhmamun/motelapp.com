@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px*100 = 62.5%, custom size, 1rem = 10px
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font: {
+    family: "Open Sans", sans-serif;
+    weight: 400;
+  }
+  color: var(--color-grey-dark-2);
+  line-height: 1.6;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}

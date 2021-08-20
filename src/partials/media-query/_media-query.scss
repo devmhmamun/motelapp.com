@@ -1,0 +1,96 @@
+@media only screen and (max-width: $bp-xlg-screen) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: $bp-lg-screen) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: $bp-md-screen) {
+  .content {
+    flex-direction: column;
+    .navbar {
+      display: flex;
+      margin: 0;
+      &__list {
+        flex: 1;
+        a {
+          justify-content: center;
+        }
+      }
+    }
+    .copyright {
+      display: none;
+    }
+    .hotel-view {
+      .detail {
+        padding: 3rem !important;
+        .description {
+          padding: 2rem !important;
+          margin-right: 3rem !important;
+        }
+      }
+      .cta {
+        padding: 2rem 0 !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-sm-screen) {
+  .content {
+    .sidebar {
+      .navbar {
+        &__link:link,
+        &__link:visited {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        &__icon {
+          margin: 0 0 0.7rem 1rem;
+          // margin-bottom: 0.7rem;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+    .hotel-view {
+      .detail {
+        flex-direction: column;
+        align-items: s;
+        .description {
+          margin-right: 0 !important;
+          margin-top: 0;
+          margin-bottom: 3rem;
+        }
+      }
+      .overview {
+        &__heading {
+          font-size: 1.4rem;
+        }
+      }
+      .cta {
+        &__booking {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-xsm-screen) {
+  .header {
+    flex-wrap: wrap;
+    height: 13rem !important;
+    align-content: space-around;
+    .search {
+      order: 1;
+      flex: 0 0 97%;
+    }
+  }
+}

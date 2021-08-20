@@ -1,0 +1,44 @@
+// SCSS color variable
+$bp-xlg-screen: 1200px;
+$bp-lg-screen: 1100px;
+$bp-md-screen: 865px;
+$bp-sm-screen: 690px;
+$bp-xsm-screen: 515px;
+// $bp-xsm-screen: 662px;
+
+/*
+$primary: #eb2f64;
+$primary_light: #ff3366;
+$primary_dark: #ba265d;
+
+$grey_light1: #faf9f9;
+$grey_light2: #f4f2f2;
+$grey_light3: #f0eeee;
+$grey_light4: #ccc;
+
+$grey_dark1: #666;
+$grey_dark2: #777;
+$grey_dark3: #999;
+*/
+
+// CSS color variables
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+
+  --color-light: #ffffff;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --color-shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --color-shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2);
+}
